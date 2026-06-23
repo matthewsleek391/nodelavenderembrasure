@@ -1,3 +1,3 @@
-module message_broker_ccdc37
+module message_broker_bcf9dd
 
 go 1.23
